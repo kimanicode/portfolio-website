@@ -9,6 +9,7 @@ export default {
       colors: {
         'alabaster': '#ECEBE4',
         'marian':'#324376' ,
+        'xan':'#F3B61F',
       }
     },
   },
