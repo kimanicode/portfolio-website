@@ -57,6 +57,22 @@ const Skills = () => {
                 
                 <li className='py-4 flex text-center text-white'> React Native <img src={reactNative} alt=""  className='h-[20px] w-[40px] px-2 rounded-full'/>  </li>
                  </ul>  
+                 {/* <div className='flex flex-wrap'>
+                  <div className='text-center  bg-zinc-500 w-1/2'>
+                    <img src={tailwind} alt="" className='h-[70%] mx-3 rounded w-full' />
+                    <p>Tailwind Css</p>
+                  </div>
+
+                  <div className='text-center px-3 bg-zinc-500 w-1/2'>
+                    <img src={js} alt="" className='h-[70%] w-full' />
+                    <p>Tailwind Css</p>
+                  </div>
+                  <div className='text-center px-3 bg-zinc-500 w-1/2'>
+                    <img src={react} alt="" className='h-[70%] w-full' />
+                    <p>Tailwind Css</p>
+                  </div>
+
+                 </div> */}
             </div>
         </div>
     </div>

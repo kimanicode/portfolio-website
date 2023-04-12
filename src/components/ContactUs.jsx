@@ -27,7 +27,7 @@ const ContactUs = () => {
   };
 
   return (
-    <Container>
+    <Container id="contact">
       <Form onSubmit={handleSubmit}>
         <FormTitle>Contact Me</FormTitle>
         <FormField>
@@ -114,6 +114,9 @@ const FormTitle = styled.h2`
   font-size: 2rem;
   margin-bottom: 1rem;
   color:#F3B61F;
+  @media screen and (max-width: 768px) {
+   font-size:1.5rem;
+  }
 `;
 
 const FormField = styled.div`
@@ -185,11 +188,16 @@ const ContactInfo = styled.div`
 const ContactInfoTitle = styled.h3`
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color:#0077cc
+  color:#0077cc;
+  text-align:center;
+  @media screen and (max-width: 768px) {
+    font-size:1rem;
+   }
 `;
 const Messages = styled.div`
   background-color:#324376;
   color:white;
+  width:100%;
   
   display:flex;
   justify-content:center;
@@ -197,8 +205,13 @@ const Messages = styled.div`
   height:400px;
   border-radius:20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);  
-  padding:10px
-
+  padding-left:10px;
+  @media screen and (max-width: 768px) {
+    height:200px;
+    padding:10px;
+    
+    
+    }
  
 
 
