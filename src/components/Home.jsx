@@ -17,10 +17,10 @@ const Home = () => {
 
         </div>
         
-        <h1 className='text-3xl text-violet-800 md:text-2xl py-3 text-marian'>I build things for the <span className='text-xan'>web</span></h1>
+        <h1 className='text-3xl text-violet-800 md:text-5xl py-3 text-marian'>I build things for the <span className='text-xan'>web.</span></h1>
         <span className='p-2 text-marian'>I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences.</span>
 
-        <button className=' rounded  hover:bg-marian bg-xan text-white px-5 py-3  md:w-[400px] md:mt-6' onClick={() => navigate('/contact-us')}>Let's build</button>
+        <button className=' rounded  hover:bg-marian bg-xan text-white px-5 py-3  md:w-[400px] md:mt-6' onClick={() => navigate('/#contact')}>Let's build</button>
       </div>
 
       <div className='basis-1/2   md:mt-[-130px]' >

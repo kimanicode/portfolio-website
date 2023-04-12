@@ -5,20 +5,25 @@ import { HashLink} from 'react-router-hash-link';
 
 const Header = () => {
   const [nav ,setNav] = useState(false)
+  
+
+  function handleLinkClick() {
+    setNav(false);
+  }
 
   function handleClick(){
     setNav(!nav)
   }
   return (
-    <>
+    <div className=' h-20 sticky top-0 z-10 drop-shadow-lg '>
     <div className=' h-20 sticky top-0 z-10 drop-shadow-lg  px-7  bg-alabaster items-center mx-auto   flex justify-between w-full'>
         <div className='text-marian font-bold mr-4 text-3xl hover:text-4xl sm:text-4x'>Kimani</div>
         <div className='hidden md:block'>
          
             <ul className='flex'>
-              <li className='px-2 text-violet-800 cursor-pointer hover:text-green-300'><HashLink to='/#home' smooth>Home</HashLink></li>
+              <li className='px-4 text-violet-800 cursor-pointer hover:text-green-300'><HashLink  to='/#home' smooth>Home</HashLink></li>
               <li className='px-2 text-violet-800 cursor-pointer hover:text-green-300'><HashLink to='/#projects' smooth>Projects</HashLink></li>
-              <li className='px-2 text-violet-800 cursor-pointer hover:text-green-300'><HashLink to='/#contact' smooth>Contact</HashLink></li>
+              <li className='px-4 text-violet-800 cursor-pointer hover:text-green-300'><HashLink to='/#contact' smooth>Contact</HashLink></li>
 
             </ul>
           
@@ -34,21 +39,21 @@ const Header = () => {
 
 
     </div>
-    {nav && <ul className='px-8  absolute  bg-alabaster  w-full flex flex-col '>
+    {nav && <ul className='px-8  inline-block bg-alabaster  w-full flex flex-col '>
 
-<li className='px-2 text-marian hover:text-green-300'><a href="#">Home</a></li>
-<li className='px-2 text-marian hover:text-green-300'><a href="#">Projects</a></li>
-<li className='px-2 text-marian hover:text-green-300'><a href="#">Contact me</a></li>
+<li className='py-2 text-marian hover:text-green-300'><HashLink onClick={handleLinkClick} to='/#home' smooth>Home</HashLink></li>
+<li className='py-2 text-marian hover:text-green-300'><HashLink onClick={handleLinkClick} to='/#projects' smooth>Projects</HashLink></li>
+<li className='py-2 text-marian hover:text-green-300'><HashLink onClick={handleLinkClick} to='/#contact' smooth>Contact</HashLink></li>
 
 
-<div className='flex py-3 flex-col'>
+<div className='flex py-3 flex-col ' onClick={handleLinkClick}>
 <button className='rounded  hover:bg-marian bg-sky-500 text-white px-5 py-3  '>Resume</button>
 </div>
 
 </ul>
 }
 
-</>
+</div>
   )
 }
 

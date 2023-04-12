@@ -24,10 +24,10 @@ const Skills = () => {
             <div className='p-3 w-full'>
                 <img src={code} alt="" />
             </div>
-            <div>
+            <div  className=''>
                 <p className='text-green-500 text-center md:text-xl'>Here are a few technologies I’ve been working with recently:</p>
 
-                 <ul className='px-3'>
+                 <ul className='px-10  md:px-3 '>
                  <li className='py-4 text-start flex text-white'>Tailwind Css <img src={tailwind} alt=""  className='h-[20px] w-[40px] px-2 rounded-full'/></li>
 
                 <li className='py-4 text-center text-white flex'>

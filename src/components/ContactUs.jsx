@@ -191,7 +191,7 @@ const ContactInfoTitle = styled.h3`
   color:#0077cc;
   text-align:center;
   @media screen and (max-width: 768px) {
-    font-size:1rem;
+    font-size:20px;
    }
 `;
 const Messages = styled.div`
