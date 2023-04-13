@@ -162,6 +162,10 @@ const SubmitButton = styled.button`
   &:hover {
     background-color: #005ea3;
   }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    
+  }
 `;
 const Success = styled.p`
   color: green;
