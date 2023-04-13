@@ -23,8 +23,8 @@ const Home = () => {
         <button className=' rounded  hover:bg-marian bg-xan text-white px-5 py-3  md:w-[400px] md:mt-6' onClick={() => navigate('/#contact')}>Let's build</button>
       </div>
 
-      <div className='basis-1/2   md:mt-[-130px]' >
-        <img src={myPic} alt="" className='h-full rounded-lg'/>
+      <div className='md:basis-1/2  mt-[-50px] md:mt-[-130px]' >
+        <img src={myPic} alt="" className='h-full w-full rounded-lg'/>
       </div>
     </div>
   )
